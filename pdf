@@ -1,0 +1,56 @@
+<h1 id="data-analytics-framework">Data Analytics Framework</h1>
+<h1 id="introduction">Introduction</h1>
+<p>This is a sample <a href="https://github.github.com/gfm/">GitHub style markdown</a> file. Top level headers are chapters and other headings are for sub-sections.</p>
+<h1 id="python">Python</h1>
+<ul>
+<li>Lists are declared within <code>[]</code> and elements are separated by <code>,</code></li>
+<li>Each element can be of any data type, including list data type</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Use <code>for</code> loop to iterate over a list.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">12</span>, <span class="dv">3</span>, <span class="dv">25</span>, <span class="dv">624</span>, <span class="dv">21</span>, <span class="dv">5</span>, <span class="dv">9</span>, <span class="dv">12</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>odd_numbers <span class="op">=</span> []</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>even_numbers <span class="op">=</span> []</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> numbers:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    odd_numbers.append(num) <span class="cf">if</span>(num <span class="op">%</span> <span class="dv">2</span>) <span class="cf">else</span> even_numbers.append(num)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;numbers:      </span><span class="sc">{</span>numbers<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;odd_numbers:  </span><span class="sc">{</span>odd_numbers<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;even_numbers: </span><span class="sc">{</span>even_numbers<span class="sc">}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<blockquote>
+<p>This is a quote</p>
+</blockquote>
+<blockquote>
+<p><img src="info.svg" alt="info" /> This is a note</p>
+</blockquote>
+<h1 id="ruby">Ruby</h1>
+<ul>
+<li>Arrays are declared within <code>[]</code> and elements are separated by <code>,</code></li>
+<li>Each element can be of any data type, including array data type</li>
+</ul>
+<h2 id="example-1">Example</h2>
+<p>Use <code>each</code> method to iterate over an array.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>numbers <span class="kw">=</span> <span class="kw">[</span><span class="dv">2</span>, <span class="dv">12</span>, <span class="dv">3</span>, <span class="dv">25</span>, <span class="dv">624</span>, <span class="dv">21</span>, <span class="dv">5</span>, <span class="dv">9</span>, <span class="dv">12</span><span class="kw">]</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>odd_numbers <span class="kw">=</span> <span class="kw">[]</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>even_numbers <span class="kw">=</span> <span class="kw">[]</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>numbers<span class="at">.each</span> <span class="kw">{</span> <span class="kw">|</span>n<span class="kw">|</span> n<span class="at">.even?</span> ? even_numbers<span class="at">.append</span>(n) : odd_numbers<span class="at">.append</span>(n) <span class="kw">}</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;numbers:      </span><span class="sc">#{</span>numbers<span class="sc">}</span><span class="st">&quot;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;odd_numbers:  </span><span class="sc">#{</span>odd_numbers<span class="sc">}</span><span class="st">&quot;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">&quot;even_numbers: </span><span class="sc">#{</span>even_numbers<span class="sc">}</span><span class="st">&quot;</span></span></code></pre></div>
+<h1 id="cli">CLI</h1>
+<p>Executing the Python and Ruby programs mentioned in previous chapters:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> python3.7 list_looping.py</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">numbers:</span>      [2, 12, 3, 25, 624, 21, 5, 9, 12]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">odd_numbers:</span>  [3, 25, 21, 5, 9]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">even_numbers:</span> [2, 12, 624, 12]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ruby array_looping.rb</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">numbers:</span>      [2, 12, 3, 25, 624, 21, 5, 9, 12]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">odd_numbers:</span>  [3, 25, 21, 5, 9]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">even_numbers:</span> [2, 12, 624, 12]</span></code></pre></div>
+<h1 id="conclusion">Conclusion</h1>
+<p>This sample file helps you see a demo for <code>markdown</code> to <code>pdf</code> conversion using <code>pandoc</code>.</p>
+<p>// <a href="https://learnbyexample.github.io/customizing-pandoc/">https://learnbyexample.github.io/customizing-pandoc/</a></p>
