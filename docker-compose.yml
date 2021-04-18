@@ -8,18 +8,5 @@ services:
    context: etc/pandoc
   volumes:
    - ./:/data
-   # pandoc -f gfm --include-in-header etc/pandoc/chapter_break.tex -V linkcolor:blue -V geometry:a4paper -V geometry:margin=2cm -V mainfont="DejaVu Serif" -V monofont="DejaVu Sans Mono" --pdf-engine=xelatex -o README.pdf README.md
-  command: |
-   bash -c "
-    cd /data &&
-    echo pandoc 
-     -f gfm 
-     --include-in-header etc/pandoc/chapter_break.tex 
-     -V linkcolor:blue 
-     -V geometry:a4paper 
-     -V geometry:margin=2cm 
-     -V mainfont=\"DejaVu Serif\" 
-     -V monofont=\"DejaVu Sans Mono\" 
-     --pdf-engine=xelatex 
-     -o README.pdf
-     README.md"
+  entrypoint: ash
+  command: -c "cd /data && pandoc -f gfm --include-in-header etc/pandoc/chapter_break.tex -V linkcolor:blue -V geometry:a4paper -V geometry:margin=2cm -V mainfont=\"DejaVu Serif\" -V monofont=\"DejaVu Sans Mono\" --pdf-engine=xelatex -o README.pdf README.md"
