@@ -2,6 +2,22 @@ version: '3'
 
 services:
 
+# documentation
+ mdbook:
+  container_name: mdbook
+  image: peaceiris/mdbook:latest
+  stdin_open: true
+  tty: true
+  ports:
+   - 3000:3000
+   - 3001:3001
+  volumes:
+   - ${PWD}/documentation:/book
+  command:
+   - serve
+   - --hostname
+   - '0.0.0.0'
+
  pandoc:
   image: pandoc/core:2.13
   build:
