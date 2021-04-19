@@ -1,5 +1,33 @@
 # Data Analytics Framework
 
+# Generate documentation
+THis is TBD: either or use both pandoc and mdbook. Evaluating on the go.
+
+## pandoc
+```
+% docker-compose run pandoc
+Creating data-analytics-framework_pandoc_run ... done
+[WARNING] Could not fetch resource 'info.svg': replacing image with description
+```
+
+# mdbook
+This will generate documentation
+
+```
+% docker-compose run --rm mdbook init      
+
+Creating data-analytics-framework_mdbook_run ... done
+
+Do you want a .gitignore to be created? (y/n)
+y
+What title would you like to give the book? 
+Data Analytics Framework
+2021-04-19 06:14:01 [INFO] (mdbook::book::init): Creating a new book with stub content
+
+All done, no errors...
+```
+
+
 # Introduction
 
 This is a sample [GitHub style markdown](https://github.github.com/gfm/) file.
@@ -72,9 +100,5 @@ even_numbers: [2, 12, 624, 12]
 
 This sample file helps you see a demo for `markdown` to `pdf` conversion using `pandoc`.
 
-
-
-
-
-
-// https://learnbyexample.github.io/customizing-pandoc/
+ * https://learnbyexample.github.io/customizing-pandoc/
+ * https://github.com/peaceiris/docker-mdbook
