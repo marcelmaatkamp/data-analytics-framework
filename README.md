@@ -1,5 +1,10 @@
 # Data Analytics Framework
 
+## keycloak
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 # Generate documentation
 THis is TBD: either or use both pandoc and mdbook. Evaluating on the go.
 
