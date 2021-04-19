@@ -20,6 +20,7 @@ services:
 
  pandoc:
   image: pandoc/core:2.13
+  container_name: pandoc
   build:
    context: etc/pandoc
   volumes:
@@ -38,4 +39,15 @@ services:
      -V monofont=\"DejaVu Sans Mono\" \
      --pdf-engine=xelatex \
      -o README.pdf \
-     README.md"
+     README.md && \
+    pandoc \
+     -f gfm \
+     --include-in-header etc/pandoc/chapter_break.tex \
+     -V linkcolor:blue \
+     -V geometry:a4paper \
+     -V geometry:margin=2cm \
+     -V mainfont=\"DejaVu Serif\" \
+     -V monofont=\"DejaVu Sans Mono\" \
+     --pdf-engine=xelatex \
+     -o documentation/documentation.pdf \
+     documentation/src/SUMMARY.md"
